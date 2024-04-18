@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7DD4DF"
+    tools:context=".Quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7DD4DF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1: What type of vertebrate is a bat?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/options1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/option1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) Mammal" />
+
+            <RadioButton
+                android:id="@+id/option1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) Bird" />
+
+            <RadioButton
+                android:id="@+id/option1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) Fish" />
+
+            <RadioButton
+                android:id="@+id/option1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) Amphibian" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2: Which vertebrate has feathers?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/options2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/option2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) Dolphin" />
+
+            <RadioButton
+                android:id="@+id/option2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) Eagle" />
+
+            <RadioButton
+                android:id="@+id/option2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) Snake" />
+
+            <RadioButton
+                android:id="@+id/option2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) Frog" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3: Write the name of a vertebrate that can fly:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Answers" />
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your score: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
