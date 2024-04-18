@@ -50,7 +50,7 @@
             android:layout_marginRight="100dp"
             android:backgroundTint="#203297"
             android:onClick="onClick"
-            android:text="Invertebratesbtn"
+            android:text="Invertebrates"
             android:textSize="34sp"
             android:textStyle="normal|bold|italic" />
     </LinearLayout>

@@ -39,22 +39,18 @@ public class Quiz extends AppCompatActivity {
 
     private void checkAnswers() {
         int score = 0;
-
         RadioButton radioButton1 = findViewById(options1.getCheckedRadioButtonId());
         if (radioButton1 != null && radioButton1.getId() == R.id.option1_1) {
             score++;
         }
-
         RadioButton radioButton2 = findViewById(options2.getCheckedRadioButtonId());
         if (radioButton2 != null && radioButton2.getId() == R.id.option2_2) {
             score++;
         }
-
         String answerText = answer3.getText().toString().trim();
-        if (answerText.equalsIgnoreCase("eagle")) {
+        if (!answerText.isEmpty() && answerText.equalsIgnoreCase("Bird")) {
             score++;
         }
-
         scoreTextView.setText("Your score: " + score);
         scoreTextView.setVisibility(View.VISIBLE);
     }

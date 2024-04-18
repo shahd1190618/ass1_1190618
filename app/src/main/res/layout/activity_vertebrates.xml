@@ -35,7 +35,6 @@
             android:backgroundTint="#4395CC"
             android:textAlignment="viewStart" />
 
-        <!-- ListView with visibility set to "gone" -->
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
